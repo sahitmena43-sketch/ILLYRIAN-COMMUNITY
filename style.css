@@ -134,3 +134,121 @@
         font-size: 2rem;
     }
 }
+/* LOGO RRETHORE SI FOTO PROFILI */
+.profile-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #FF0000;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.7);
+    border-color: #FFD700;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInLogo 1.5s ease-in-out;
+}
+
+@keyframes fadeInLogo {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* EMRAT MË TË DUkshëm */
+.role-description strong {
+    color: #FFD700;
+    font-size: 1.1rem;
+    display: block;
+    margin: 5px 0;
+}
+
+.role-card.ceo .role-description strong {
+    color: #FF6B6B;
+}
+
+.role-card.founder .role-description strong {
+    color: #FF4500;
+}
+
+.role-card.owner .role-description strong {
+    color: #FFD700;
+    font-size: 1.2rem;
+    }
+/* BUTONAT - si në fillim */
+.buttons {
+    margin: 40px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.discord-btn {
+    background: #FF0000;
+    color: white;
+    border: 2px solid #FF0000;
+}
+
+.discord-btn:hover {
+    background: transparent;
+    color: #FF0000;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #FF0000;
+}
+
+.outline-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.outline-btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* LOGO RRETHORE */
+.profile-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #FF0000;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.7);
+    border-color: #FFD700;
+}
+
+/* EMRAT */
+.role-description strong {
+    color: #FFD700;
+    font-size: 1.1rem;
+    display: block;
+    margin: 5px 0;
+    }
