@@ -20,3 +20,117 @@
 .role-card.founder .role-description i {
     margin-right: 5px;
 }
+/* ========== SEKSIONI I RREGULLAVE ========== */
+.rules-section {
+    margin: 80px 0;
+    text-align: center;
+}
+
+.rules-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #FFD700;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.rules-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rule-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #FF0000;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.rule-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 0, 0, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+.rule-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.5);
+}
+
+.rule-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #FF0000;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    min-width: 80px;
+    text-align: center;
+}
+
+.rule-content h3 {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.rule-content p {
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* Ngjyra të ndryshme për çdo rregull */
+.rule-1 { border-left: 5px solid #FF0000; }
+.rule-2 { border-left: 5px solid #FFD700; }
+.rule-3 { border-left: 5px solid #FF6B6B; }
+.rule-4 { border-left: 5px solid #FF4500; }
+
+.rule-1 .rule-number { color: #FF0000; }
+.rule-2 .rule-number { color: #FFD700; }
+.rule-3 .rule-number { color: #FF6B6B; }
+.rule-4 .rule-number { color: #FF4500; }
+
+/* Për logo të vogël */
+.small-logo {
+    max-width: 120px !important;
+}
+
+.anthem-small {
+    color: #FFD700;
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Responsive për rregullat */
+@media (max-width: 768px) {
+    .rules-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .rule-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rules-section h2 {
+        font-size: 2rem;
+    }
+}
