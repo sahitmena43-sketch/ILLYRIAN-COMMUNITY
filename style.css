@@ -405,3 +405,66 @@ body {
     .button-group { flex-direction: column; }
     .rule { flex-direction: column; text-align: center; }
     }
+/* ========== FEATURES TË REJA - 10+, SIGURI, EVENTE ========== */
+.features-new {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 60px 0 40px 0;
+}
+
+.features-new .feature-card {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 2px solid #FF0000;
+}
+
+.features-new .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.5);
+}
+
+.features-new .feature-card i {
+    margin-bottom: 20px;
+}
+
+.features-new .feature-card h3 {
+    color: #FFD700;
+    margin: 15px 0 10px;
+    font-size: 2rem;
+}
+
+.features-new .feature-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ffffff;
+    opacity: 0.95;
+}
+
+.features-new .red-card i {
+    color: #FF0000;
+}
+
+.features-new .black-card i {
+    color: #FFD700;
+}
+
+.features-new .red-card {
+    background: linear-gradient(135deg, #660000, #330000);
+}
+
+.features-new .black-card {
+    background: linear-gradient(135deg, #000000, #222222);
+}
+
+@media (max-width: 768px) {
+    .features-new {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
