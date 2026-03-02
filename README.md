@@ -8,7 +8,7 @@ ILLYRIAN-COMMUNITY/
 └── 📘 README.md
 # 🇦🇱 ILLYRIAN COMMUNITY - Website Zyrtar
 
-![ILLYRIAN COMMUNITY Logo](1000021766.jpg)
+![ILLYRIAN COMMUNITY.
 
 Ky është website-i zyrtar i **ILLYRIAN COMMUNITY**, komunitetit më të fuqishëm Ilir në Discord.
 
