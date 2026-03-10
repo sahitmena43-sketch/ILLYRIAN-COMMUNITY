@@ -535,7 +535,7 @@ body {
         justify-content: center;
     }
 }
-/* ========== SEKSIONI NA KONTAKTO ========== */
+ /* ========== SEKSIONI NA KONTAKTO ME BUTONA DM ========== */
 .contact-section {
     margin: 80px 0;
     text-align: center;
@@ -561,9 +561,9 @@ body {
 
 .contact-staff {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
     margin: 0 auto 40px;
 }
 
@@ -571,53 +571,75 @@ body {
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid #FF0000;
     border-radius: 20px;
-    padding: 35px 20px;
+    padding: 25px 15px;
     backdrop-filter: blur(10px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(255, 0, 0, 0.5);
 }
 
-.contact-card::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
-    transform: rotate(45deg);
-    animation: shine 3s infinite;
-}
-
 .contact-card i {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
 .contact-card h3 {
     color: #FFD700;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .contact-name {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .contact-desc {
     color: #ffffff;
     opacity: 0.9;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    margin: 5px 0 15px;
+}
+
+/* BUTONI DM */
+.dm-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #5865F2;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
     margin-top: 10px;
+    width: 100px;
+}
+
+.dm-button:hover {
+    background: transparent;
+    border-color: #5865F2;
+    color: #5865F2;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #5865F2;
+}
+
+.dm-button i {
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 /* Ngjyra të veçanta për çdo kartelë */
@@ -635,26 +657,26 @@ body {
 
 .contact-message {
     margin-top: 40px;
-    padding: 25px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     border: 1px solid #FF0000;
 }
 
 .contact-message p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #FFD700;
     margin: 0;
 }
 
 .contact-message i {
     color: #FF0000;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     animation: bounce 2s infinite;
 }
 
@@ -670,18 +692,17 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .contact-section h2 {
-        font-size: 2rem;
-    }
-    
+@media (max-width: 480px) {
     .contact-staff {
         grid-template-columns: 1fr;
     }
     
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+    
     .contact-message {
         flex-direction: column;
-        gap: 10px;
         border-radius: 20px;
     }
-}
+}   
